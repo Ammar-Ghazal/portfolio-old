@@ -153,9 +153,9 @@ nav a {
     transition: color 0.4s linear;
 }
 nav:active {
-    margin-top: 13px;
-    margin-right: 13px;
     box-shadow: 0 0;
+    transform: translate(-5px, 5px);
+    transition: transform 45ms linear;
     /* transition: margin-top 0.4s linear;
     transition: margin-bottom 0.4s linear; */
 }
