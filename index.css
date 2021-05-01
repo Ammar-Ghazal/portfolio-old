@@ -1,68 +1,166 @@
 html {
     font-family: 'Raleway', sans-serif;
-    background-color: #F9F871;
-    color: black;
+    background-color: hsl(213, 41%, 5%);
+    color: hsl(0, 1%, 74%);
+    /* Experimenting with gradient :) */
+    /* Taken from here:  https://mycolor.space/gradient?ori=to+right+top&hex=%23051937&hex2=%23A8EB12&sub=1*/
+    /* background-image: linear-gradient(to right top, #6aacff, #348fff, #0070ff, #004cfa, #2212eb); */
 }
 
 header {
     font-family: 'Comfortaa', cursive;
     text-align: center;
-    align-content
+}
+
+p, li {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color:hsl(22, 91%, 50%);
+    background-color: #080d13;
+}
+
+a {
+    color: rgb(0, 255, 242);
+    transition: color 0.4s linear;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+.biography h2, .skills h2, .projects h2, .contact h2{
+    text-decoration: underline;
+    text-decoration-color: orangered;
+    text-decoration-thickness: 2px;
+}
+
+.skills h2 {
+    align-self: end;
+}
+
+.projects h2 {
+    align-self: end;
+}
+
+.project-name {
+    text-decoration: underline;
+    text-decoration-color: hsl(204, 95%, 43%);
+    text-decoration-thickness: 1px;
+    color: white;
+}
+
+li a {
+    text-decoration-color: hsl(204, 95%, 43%);
+    text-decoration-thickness: 3px;
+    color: white;
+}
+
+.biography {
+    display: grid;
+    grid-template: 1fr 1fr 4fr / 1fr;
+}
+
+.skills {
+    display: grid;
+    grid-template: 1fr 2fr 4fr / 1fr;
+}
+
+.projects {
+    display: grid;
+    grid-template: 1fr 3fr / 1fr;
+}
+
+.contact {
+    display: grid;
+    grid-template: 1fr 2fr / 1fr;
 }
 
 .picture {
     z-index: 1; 
     /* max-width: 1500px; */
-    background-image: url(headerbackground.jpg);
-}
-
-.line {
-    width: 30rem;
-    height: 0.3rem;
-    background-color: black;
-    grid-area: line;
+    background: url(headerbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: 1600px 1200px;
+    width: 98vw;
+    height: 900px;;
 }
 
 .header {
     margin-top: 10px;
     display: grid;
-    grid-template: 4fr 1fr 2fr / 1fr;
+    height: 100%;
+    grid-template: 5fr 1fr 4fr/ 1fr;
     grid-template-areas: "first"
                         "second"
                         "third";
     justify-items: center;
     align-items: center;
-    background-color: #F9F871c2;
+    background-color: hsla(0, 0%, 0%, 0.851);
 }
 .header h1 {
     font-weight: 700;
     font-size: 4rem;
     grid-area: first;
+    align-self: end;
+    margin-top: 14rem;
+    margin-bottom: 0;
+    text-decoration: underline;
+    text-decoration-color: orangered;
+    color: white;
+    text-decoration-thickness: 3px;
 }
-.header .line {
+
+.second {
+    align-self: start;
+    margin-top: 0;
+    font-size: 1rem;
     grid-area: second;
 }
+
+/* .header .line {
+    grid-area: third;
+} */
 .header h2 {
     grid-area: third;
+    font-size: 2rem;
+    margin-top: 0;
+    align-self: start;
+    /* margin-bottom: 20vh; */
 }
 
 nav {
-    background-color: #082255;
-    color: #B64971;
+    background-color: hsl(216, 42%, 16%);
+    color: orangered;
     border-radius: 5px;
-    box-shadow: -4px 4px;
+    box-shadow: -5px 5px;
     padding: 10px;
     display: grid;
     grid-template: 1fr / repeat(5, 1fr);
+    transition: color 0.4s linear;
 }
 nav:hover {
-    color: #EC7664;
+    color: hsl(198, 90%, 19%);
+    transition: color 0.4s linear;
 }
 nav a {
-    color: #F9F871;
+    color: hsl(0, 0%, 100%);
     font-size: 1.5rem;
     text-decoration: none;
+    transition: color 0.4s linear;
 }
-nav a:hover {
-    color: aqua;
+nav:active {
+    margin-top: 13px;
+    margin-right: 13px;
+    box-shadow: 0 0;
+    /* transition: margin-top 0.4s linear;
+    transition: margin-bottom 0.4s linear; */
+}
+
+.link:hover, nav a:hover{
+    color: hsl(180, 100%, 26%);
+    transition: color 0.4s linear;
 }
