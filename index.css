@@ -1,42 +1,68 @@
 html {
     font-family: 'Raleway', sans-serif;
-    background-color: #19212f;
-    color: #e9eaf8;
+    background-color: #F9F871;
+    color: black;
 }
 
-header h1{
+header {
     font-family: 'Comfortaa', cursive;
-    font-weight: 700;
-    font-size: 4rem;
-    padding: 20rem;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.8);
+    align-content
 }
 
-.veil {
+.picture {
     z-index: 1; 
-    max-width: 1500px;
+    /* max-width: 1500px; */
     background-image: url(headerbackground.jpg);
 }
 
+.line {
+    width: 30rem;
+    height: 0.3rem;
+    background-color: black;
+    grid-area: line;
+}
+
+.header {
+    margin-top: 10px;
+    display: grid;
+    grid-template: 4fr 1fr 2fr / 1fr;
+    grid-template-areas: "first"
+                        "second"
+                        "third";
+    justify-items: center;
+    align-items: center;
+    background-color: #F9F871c2;
+}
+.header h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    grid-area: first;
+}
+.header .line {
+    grid-area: second;
+}
+.header h2 {
+    grid-area: third;
+}
+
 nav {
-    background-color: grey;
+    background-color: #082255;
+    color: #B64971;
     border-radius: 5px;
     box-shadow: -4px 4px;
     padding: 10px;
-    margin: 5px 10px;
     display: grid;
-    grid-template: 1fr / repeat(4, 1fr);
+    grid-template: 1fr / repeat(5, 1fr);
 }
-
+nav:hover {
+    color: #EC7664;
+}
 nav a {
-    color: rgb(5, 26, 26);
-    font-size: 2rem;
+    color: #F9F871;
+    font-size: 1.5rem;
     text-decoration: none;
 }
-
-nav:hover {
-    color: white;
+nav a:hover {
+    color: aqua;
 }
-
-
