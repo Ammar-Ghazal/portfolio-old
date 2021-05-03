@@ -66,12 +66,12 @@ li a {
 
 .skills {
     display: grid;
-    grid-template: 1fr 2fr 2fr / 1fr;
+    grid-template: 1fr 3fr 3fr / 1fr;
 }
 
 .projects {
     display: grid;
-    grid-template: 1fr 3fr / 1fr;
+    grid-template: 1fr 5fr / 1fr;
 }
 
 .contact {
@@ -80,17 +80,17 @@ li a {
 }
 
 .picture {
-    z-index: 1; 
-    /* max-width: 1500px; */
     background: url(headerbackground.jpg);
     background-repeat: no-repeat;
-    background-size: 1600px 1200px;
-    width: 98vw;
-    height: 900px;;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: hsl(213, 41%, 5%);
+    background-size: cover;
 }
 
 .header {
-    margin-top: 10px;
+    /* margin: top horizontal bottom */
+    margin: 10px auto 0px;
     display: grid;
     height: 100%;
     grid-template: 5fr 1fr 4fr/ 1fr;
@@ -99,7 +99,7 @@ li a {
                         "third";
     justify-items: center;
     align-items: center;
-    background-color: hsla(0, 0%, 0%, 0.851);
+    background-color: hsla(0, 0%, 0%, 0.548);
 }
 .header h1 {
     font-weight: 700;
@@ -138,9 +138,11 @@ nav {
     border-radius: 5px;
     box-shadow: -5px 5px;
     padding: 10px;
+    width: 96vw;
     display: grid;
     grid-template: 1fr / repeat(5, 1fr);
     transition: color 0.4s linear;
+    margin: auto;
 }
 nav:hover {
     color: hsl(198, 90%, 19%);
@@ -156,8 +158,6 @@ nav:active {
     box-shadow: 0 0;
     transform: translate(-5px, 5px);
     transition: transform 1ms linear;
-    /* transition: margin-top 0.4s linear;
-    transition: margin-bottom 0.4s linear; */
 }
 
 .link:hover, nav a:hover{
