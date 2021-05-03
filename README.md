@@ -23,6 +23,6 @@ Some of the skills that I used:
 
 
 ## Launch:
-To view my website, simply click [here](https://ammar-ghazal.github.io/portfolio/index.html{target="_blank"}).
+To view my website, simply click [here](https://ammar-ghazal.github.io/portfolio/index.html).
 Alternatively, you can paste this link to your browser:
 https://ammar-ghazal.github.io/portfolio/index.html
