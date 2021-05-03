@@ -1,5 +1,6 @@
 #Welcome to my portfolio website!
 
+
 ##Introduction:
 The project's aim/summary: I wanted to create a website to put the skills that I learned to use.
 Some of the skills that I used:
@@ -13,13 +14,13 @@ Some of the skills that I used:
 8. And many more
 
 
-
 ##Languages Used:
 - HTML5
 - CSS3
 - JavaScript ES6
 
+
 ##Launch
-To view my website, simply click [here](https://ammar-ghazal.github.io/portfolio/index.html)
-Or you can past this link to your browser:
+To view my website, simply click [here](https://ammar-ghazal.github.io/portfolio/index.html){target="_blank"}
+Or you can paste this link to your browser:
 https://ammar-ghazal.github.io/portfolio/index.html
