@@ -6,7 +6,7 @@ Some of the skills that I used:
 1. Git Bash CLI
 2. CMD, GitHub
 3. Web Design
-4. CSS Grids, 
+4. CSS Grids 
 5. CSS Transitions and Transforms
 6. Semantic HTML
 7. Markdown
