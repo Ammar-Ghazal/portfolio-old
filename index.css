@@ -32,7 +32,7 @@ h3 {
     font-size: 1.8rem;
 }
 
-.biography h2, .skills h2, .projects h2, .contact h2{
+.workExperience h2, .skills h2, .projects h2, .contact h2{
     text-decoration: underline;
     text-decoration-color: orangered;
     text-decoration-thickness: 2px;
@@ -46,11 +46,14 @@ h3 {
     align-self: end;
 }
 
-.project-name {
+.project-name, .event-name, .experience{
     text-decoration: underline;
     text-decoration-color: hsl(204, 95%, 43%);
     text-decoration-thickness: 1px;
     color: white;
+}
+.event-name{
+    margin-bottom: 3.5rem;
 }
 
 li a {
@@ -59,19 +62,19 @@ li a {
     color: white;
 }
 
-.biography {
+.workExperience {
     display: grid;
-    grid-template: 1fr 1fr 4fr / 1fr;
+    grid-template: 1fr 7fr / 1fr;
 }
 
 .skills {
     display: grid;
-    grid-template: 1fr 3fr 3fr / 1fr;
+    grid-template: 1fr 8fr/ 1fr;
 }
 
 .projects {
     display: grid;
-    grid-template: 1fr 5fr / 1fr;
+    grid-template: 1fr 8fr / 1fr;
 }
 
 .contact {
