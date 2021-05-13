@@ -10,7 +10,7 @@ Some of the skills that I used:
 5. CSS Transitions and Transforms
 6. Semantic HTML
 7. Markdown
-8. And many more
+8. And more
 
 <br>
 
