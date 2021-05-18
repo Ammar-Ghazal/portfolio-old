@@ -1,7 +1,7 @@
 html {
     font-family: 'Raleway', sans-serif;
     background-color: hsl(213, 41%, 5%);
-    color: hsl(0, 1%, 74%);
+    color: hsl(0, 0%, 89%);
     font-size: 14px;
     /* Experimenting with gradient :) */
     /* Taken from here:  https://mycolor.space/gradient?ori=to+right+top&hex=%23051937&hex2=%23A8EB12&sub=1*/
@@ -13,16 +13,13 @@ header {
     text-align: center;
 }
 
-p, li {
+p, li, .orange-highlight {
     font-size: 1.6rem;
     font-weight: 600;
-    color:hsl(22, 91%, 50%);
+    color:hsl(22, 75%, 55%);
     background-color: #080d13;
-}
-
-a {
-    color: rgb(0, 255, 242);
-    transition: color 0.4s linear;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h2 {
@@ -31,8 +28,10 @@ h2 {
 
 h3 {
     font-size: 1.8rem;
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+    margin-left: 0.5rem;
 }
-
 
 .workExperience h2, .skills h2, .projects h2, .contact h2{
     text-decoration: underline;
@@ -48,41 +47,39 @@ h3 {
     align-self: end;
 }
 
-.project-name, .event-name, .experience{
-    text-decoration: underline;
-    text-decoration-color: hsl(204, 95%, 43%);
-    text-decoration-thickness: 1px;
+.contact-info {
     color: white;
+    font-size: 2rem;
+    color:hsl(22, 75%, 55%);
+    margin-top: 40rem;
+}.contact p {
+    margin-top: 2rem;
 }
-.event-name{
-    margin-bottom: 3.5rem;
-}
-
-li a {
-    text-decoration-color: hsl(204, 95%, 43%);
-    text-decoration-thickness: 3px;
-    color: white;
+a {
+    color: hsl(0, 0%, 100%);
+    transition: color 0.4s linear;
+    font-size: 2rem;
 }
 
 .workExperience {
     display: grid;
-    grid-template: 1fr 7fr / 1fr;
+    grid-template: 1fr / 1fr;
     align-items: center;
 }
 
 .skills {
     display: grid;
-    grid-template: 1fr 8fr/ 1fr;
+    grid-template: 1fr / 1fr;
 }
 
 .projects {
     display: grid;
-    grid-template: 1fr 8fr / 1fr;
+    grid-template: 1fr / 1fr;
 }
 
 .contact {
     display: grid;
-    grid-template: 1fr 2fr / 1fr;
+    grid-template: 1fr / 1fr;
 }
 
 .picture {
@@ -91,6 +88,27 @@ li a {
     background-position: center center;
     background-attachment: fixed;
     background-color: hsl(213, 41%, 5%);
+    background-size: cover;
+}.skillsIMG {
+    background: url(skillsIMG.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: hsl(216, 38%, 5%);
+    background-size: cover;
+}.projectsIMG{
+    background: url(projectsIMG.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: hsl(216, 38%, 5%);
+    background-size: cover;
+}.experienceIMG {
+    background: url(experienceIMG.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: hsl(216, 38%, 5%);
     background-size: cover;
 }
 
@@ -106,16 +124,26 @@ li a {
     justify-items: center;
     align-items: center;
     background-color: hsla(0, 0%, 0%, 0.67);
-}
-.non-homepage {
+}.non-homepage {
+    /* margin: top horizontal bottom */
+    margin: 10px auto 0px;
+    display: grid;
+    height: 50vh;
+    grid-template: 2fr 1fr/ 1fr;
+    grid-template-areas: "first"
+                        "second";
+    justify-items: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 0%, 0.651);
+}.contact-page {
     /* margin: top horizontal bottom */
     margin: 10px auto 0px;
     display: grid;
     height: 40vh;
-    grid-template: 2fr 1fr/ 1fr;
+    width: 97
+    grid-template: 1fr 1fr/ 1fr;
     grid-template-areas: "first"
-                        "second"
-                        "third";
+                        "second";
     justify-items: center;
     align-items: center;
     background-color: hsla(0, 0%, 0%, 0.67);
@@ -133,7 +161,7 @@ li a {
     text-decoration-thickness: 3px;
 }.non-homepage h1 {
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3rem;
     grid-area: first;
     align-self: end;
     margin-top: 3rem;
@@ -142,8 +170,23 @@ li a {
     text-decoration-color: orangered;
     color: white;
     text-decoration-thickness: 3px;
+}.contact-page h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    grid-area: first;
+    align-self: end;
+    margin-top: 5rem;
+    margin-bottom: 0;
+    text-decoration: underline;
+    text-decoration-color: orangered;
+    color: white;
+    text-decoration-thickness: 3px;
 }
 
+/* Individual Tints: */
+.skills-tint, .experience-tint {
+    background-color: hsla(0, 0%, 0%, 0.856);
+}
 
 .second {
     align-self: start;
